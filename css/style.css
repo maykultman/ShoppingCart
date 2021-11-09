@@ -1,0 +1,63 @@
+		.card{
+			margin: 0 auto 20px auto;
+		}
+		.card img{
+			width: 100%;
+			height: 160px;
+			object-fit: contain;
+			object-position: center;
+		}
+		.card sxmall {
+		    color: #fff;
+		    position: absolute;
+		    padding: 5px 20px;
+		    background: #343a40;
+		    border-radius: 0px 0px 5px 0px;
+		}
+		#previewCar {
+		    position: absolute;
+		    top: 90px;
+		    right: 50px;
+		    visibility: hidden;
+		    opacity: 0;
+		    transition: 0.4s ease-in-out;
+		}
+		#previewCar img {
+    		width: 80px;
+    	}
+    	.header{
+    		position: relative;
+    		z-index: 1;
+    	}
+    	#hideCar_list{
+    		display: none;
+    	}
+    	#aux:checked ~ #hideCar_list{
+    		display: block;
+    	}
+    	#aux:checked ~ #showCar_list{
+    		display: none;
+    	}
+		#aux:checked ~ #previewCar {
+		    visibility: visible;
+		    opacity: 1;
+		    transform: translateY(10px);
+		}
+		span#totalItems {
+		    color: #fff;
+		    background: #ff6d00;
+		    border-radius: 100%;
+		    width: 25px;
+		    height: 25px;
+		    display: block;
+		    position: absolute;
+		    top: 40px;
+		    right: 37px;
+		    z-index: 1;
+		    text-align: center;
+		    border: none;
+		}
+
+table tr td{
+	vertical-align: middle!important;
+}
